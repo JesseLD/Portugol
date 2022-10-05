@@ -1,13 +1,13 @@
 Algoritmo "opa"
 
 Var
-    nome:caractere
+    nomeDoUsuario:caractere
 
 
 Inicio
     escreval("Bem Vindo!")
     escreval("Qual o seu nome?")
-    leia(nome)
-    escreval("Olá ", nome , " é um prazer te conheçer ")
+    leia(nomeDoUsuario)
+    escreval("Olá ", nomeDoUsuario , " é um prazer te conheçer ")
 
 Fimalgoritmo

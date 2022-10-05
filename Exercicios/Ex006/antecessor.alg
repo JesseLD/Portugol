@@ -1,26 +1,24 @@
-Algoritmo "media"
+Algoritmo "antecessor e sucessor"
 
 Var
-    primeiraMedia,segundaMedia,media:real
+    entradaUsuario,antecessor,sucessor:inteiro
     aguarde:logico
 
 Inicio
     escreval("***********************************")
     escreval("** Iniciando Caluladora Simples! **")
-    escreval("   ** Fator: SOMA e DIVISAO **"     )
+    escreval("** Fator: ANTECESSOR e SUCESSOR **" )
     escreval("***********************************")
     escreval(" ")
-    escreval("Digite o primeiro valor")
-    leia(primeiraMedia)
-    escreval(" ")
-    escreval("Digite o segundo valor")
-    leia(segundaMedia)
-    media <- (primeiraMedia + segundaMedia)/2
+    escreval("Digite um número")
+    leia(entradaUsuario)
+    antecessor <- entradaUsuario - 1
+    sucessor <- entradaUsuario + 1
 
     limpatela
     escreval("***********************************")
     escreval("** Iniciando Caluladora Simples! **")
-    escreval("   ** Fator: SOMA e DIVISAO **"     )
+    escreval("** Fator: ANTECESSOR e SUCESSOR **" )
     escreval("  Valores Guardados e Calculados!  ")
     escreval("***********************************")
     escreval(" ")
@@ -28,5 +26,8 @@ Inicio
     leia(aguarde)
     escreval(" ")
     escreval(" ")
-    escreval("A média entre " ,primeiraMedia, " e " ,segundaMedia, " -> " ,media)
+    escreval("NÃºmero digitado: " , entradaUsuario)
+    escreval("Antecessor: ", antecessor)
+    escreval("Sucessor: ", sucessor)
+    escreval(" ")
 Fimalgoritmo

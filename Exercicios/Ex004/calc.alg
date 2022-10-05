@@ -1,7 +1,8 @@
 Algoritmo "soma"
 
 Var
-    valor1,valor2,soma:inteiro
+    primeiroValor,segundoValor,somaDosValores:inteiro
+    aguarde:logico
 
 Inicio
     escreval("***********************************")
@@ -10,11 +11,11 @@ Inicio
     escreval("***********************************")
     escreval(" ")
     escreval("Digite o primeiro valor")
-    leia(valor1)
+    leia(primeiroValor)
     escreval(" ")
     escreval("Digite o segundo valor")
-    leia(valor2)
-    soma <- valor1 + valor2
+    leia(segundoValor)
+    somaDosValores <- primeiroValor + segundoValor
 
     limpatela
     escreval("***********************************")
@@ -24,8 +25,9 @@ Inicio
     escreval("***********************************")
     escreval(" ")
     escreval("Pressione ENTER para CONTINUAR")
+    leia(aguarde)
     escreval(" ")
     escreval(" ")
-    escreval("A soma entre ", valor1, " e " ,valor2, " -> ", soma)
+    escreval("A soma entre ", primeiroValor, " e " ,segundoValor, " -> ", somaDosValores)
 
 Fimalgoritmo

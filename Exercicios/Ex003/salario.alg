@@ -1,15 +1,15 @@
 Algoritmo "salario"
 
-Var func:caractere
-    salario:real
+Var nomeDofuncionario:caractere
+    salarioAtual:real
 
 
 Inicio
     escreval("Opa")
     escreval("Nome: ")
-    leia(func)
+    leia(nomeDofuncionario)
     escreval("Salario: ")
-    leia(salario)
-    escreval("O funcion√°rio ", func ," tem um sal√°rio atual de ",salario)
+    leia(salarioAtual)
+    escreval("O funcion·rio ", nomeDofuncionario ," tem um sal·rio atual de",salarioAtual, " DÛlares")
 
 Fimalgoritmo
