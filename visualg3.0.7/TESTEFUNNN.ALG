@@ -1,14 +1,14 @@
 algoritmo "testeFunnn"
 var
 
-   cadeiras:vetor[1..2] de caractere
-   validacao:vetor[1..2] de inteiro
+   cadeiras:vetor[1..3] de caractere
+   validacao:vetor[1..3] de inteiro
    i,j,reserva,vt_sync:inteiro
    fill,next,next1:caractere
 
 
 inicio
-     vt_sync <-2
+     vt_sync <-3
      fill <- "---"
 
      //Gerador das Cadeiras
@@ -21,7 +21,7 @@ inicio
      //Linha de Divisão
      escreval("")
      para j de 1 ate i faca
-       escreva("---------")
+       escreva("--------")
      fimpara
      escreval("")
      
@@ -30,16 +30,17 @@ inicio
          escreva("Reservar a Cadeira: B")
          leia(reserva)
          limpatela
+         //Vereficador de cadeiras ocupadas
+         se(cadeiras[reserva]=fill) entao
+                escreval("assento B",reserva," ja está Ocupado!")
+            fimse
+            
          para j de 1 ate vt_sync faca
-              //Vereficador de Cadeiras Ocupadas
-             se(cadeiras[reserva]=fill)entao
-                 //escreval("*mensagem de erro*")
-                 escreval("assento B",reserva," ja está Ocupado!")
-             fimse
              se(numpcarac(reserva) = cadeiras[j]) entao
                  cadeiras[j] <- fill
                  validacao[j] <- 1
              fimse
+             
          fimpara
      
          escreval("")

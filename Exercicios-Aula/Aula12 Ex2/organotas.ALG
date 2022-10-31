@@ -50,8 +50,8 @@ var
 
 inicio
 
-      max_quest <- 5//maximo de questões
-      max_alunos <- 3//maximo de alunos
+      max_quest <- 5 //maximo de questões
+      max_alunos <- 3 //maximo de alunos
       ponto <- 2
 
       disp <- 1
