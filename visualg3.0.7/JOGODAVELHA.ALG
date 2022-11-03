@@ -2,7 +2,7 @@ algoritmo "JOGODAVELHA"
 // Disciplina   : [Linguagem e Lógica de Programação] 
 // Professor   : GG
 
-//BY JESSELD - COODEGANG STUDIOS
+//BY JESSELD - CODEGANG STUDIOS
 
 
     //PREENCEHENDO A MATRIZ
@@ -91,7 +91,7 @@ inicio
     vez <- 0
     par <- 1
     repita
-    escreva("Vai jogar em Qual Posição? ")
+    escreva("Vai jogar em [ ",x," ] Qual Posição? ")
     leia(opt)
     
     se(opt > 0) e (opt < 10) entao
@@ -140,6 +140,7 @@ inicio
     leia(a)
     limpatela
     criarVelha()
+
     ate(vencedor = verdadeiro) ou (vez = 9)
     se(vencedor = verdadeiro) entao
         escreva("O JOGADOR [ ",x," ] VENCEU!")
