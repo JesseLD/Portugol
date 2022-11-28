@@ -1,4 +1,6 @@
 algoritmo "testeFunnn"
+// Disciplina   : [Linguagem e Lógica de Programação] 
+// Professor   : Antonio Carlos Nicolodi 
 var
 
    cadeiras:vetor[1..10] de caractere
